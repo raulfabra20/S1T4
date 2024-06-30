@@ -9,30 +9,23 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MonthListTest {
 
-
-   @Test
-   void test(){
-
-           ArrayList<String> months = new ArrayList<>();
-           months.add("January");
-           months.add("February");
-           months.add("March");
-           months.add("April");
-           months.add("May");
-           months.add("June");
-           months.add("July");
-           months.add("August");
-           months.add("September");
-           months.add("October");
-           months.add("November");
-           months.add("December");
-
-           Assertions.assertEquals(months.size() == 11, months.size() == 11 );
-           Assertions.assertNotNull(months);
-           Assertions.assertEquals(months.get(7) == "August", months.get(7) == "August");
-
-
+    @Test
+    void checkHasTwelveMonths(){
+       MonthsList months = new MonthsList();
+       Assertions.assertEquals(12, months.getMonths().size());
        }
+    @Test
+    void checkListIsNotNull(){
+       MonthsList months = new MonthsList();
+       Assertions.assertNotNull(months.getMonths());
+   }
+
+    @Test
+    void checkIfMonthEightIsAugust(){
+        MonthsList months = new MonthsList();
+        Assertions.assertEquals("August",months.getMonths().get(7));
+    }
+
    }
 
 

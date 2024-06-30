@@ -11,11 +11,8 @@ public class ArrayException {
         marks.add(8.4f);
         marks.add(5.8f);
 
-        try {
-            marks.get(3);
+        marks.get(8);
 
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Index out of bounds exception");
-        }
+
     }
 }

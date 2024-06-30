@@ -1,10 +1,11 @@
 package n1.ex1;
 
-import static n1.ex1.models.MonthList.addMonths;
+
+import n1.ex1.models.MonthsList;
 
 public class Main {
     public static void main(String[] args){
-        addMonths();
+        MonthsList months = new MonthsList();
 
     }
 }
